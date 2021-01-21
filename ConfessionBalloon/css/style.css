@@ -6,8 +6,7 @@
     border-radius      : 50%;
 
 }
-
-#txt {
+.confession-txt{
     position   : relative;
     width      : 400px;
     height     : 100px;
