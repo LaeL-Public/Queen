@@ -23,7 +23,8 @@ function Balloon(pic) {
         style.left = this.left + "px";
         style.top = this.top + "px";
         style.background = this.bg;
-        style.backgroundSize = "contain";
+        style.backgroundSize = "cover";
+        style.backgroundPosition = "center";
         parent.appendChild(this.div);
         this.parent = parent;
     }
