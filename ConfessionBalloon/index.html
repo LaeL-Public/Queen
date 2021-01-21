@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- <div class="balloon"></div> -->
+    <audio src="music/告白气球 - 周杰伦.mp3" autoplay="autoplay"></audio>
+    <script src="js/Balloon.js"></script>
+    <script>
+        let n = 1;
+        let t = setInterval(() => {
+            let img = "url(image/pic" + n + ".jpg)";
+            let b2 = new Balloon(img);
+            b2.drawBalloon(document.body);
+            b2.run();
+            n++;
+            if (n > 5) {
+                clearInterval(t);
+            }
+        }, 5000);
+
+        for (let i = 0; i < 12; i++) {
+            let b = new Balloon();
+            b.drawBalloon(document.body);
+            b.run();
+        }
+    </script>
+</body>
+
+</html>
