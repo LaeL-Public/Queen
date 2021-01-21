@@ -10,7 +10,7 @@
 
 <body>
     <!-- <div class="balloon"></div> -->
-    <audio src="music/告白气球 - 周杰伦.mp3" autoplay="autoplay"></audio>
+    <audio id="bgm" src="music/告白气球 - 周杰伦.mp3" autoplay="autoplay"></audio>
     <script src="js/Balloon.js"></script>
     <script>
         let n = 1;
@@ -30,6 +30,8 @@
             b.drawBalloon(document.body);
             b.run();
         }
+
+        document.getElementById("bgm").play();
     </script>
 </body>
 
