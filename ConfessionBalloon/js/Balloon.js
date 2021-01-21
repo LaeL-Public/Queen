@@ -6,8 +6,8 @@ function Balloon(pic) {
     if (pic == null) {
         this.bg = randomColor();
         this.r = randomRange(30, 80);
-        this.speedX = randomRange(-5, 5);
-        this.speedY = randomRange(-5, 5);
+        this.speedX = randomRange(-6, 6);
+        this.speedY = randomRange(-6, 6);
     }
     else {
         this.bg = pic;
