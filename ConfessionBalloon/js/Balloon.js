@@ -5,13 +5,13 @@ function Balloon(pic) {
     this.div.className = "balloon";
     if (pic == null) {
         this.bg = randomColor();
-        this.r = randomRange(30, 80);
+        this.r = randomRange(30, 95);
         this.speedX = randomRange(-6, 6);
         this.speedY = randomRange(-6, 6);
     }
     else {
         this.bg = pic;
-        this.r = randomRange(80, 120);
+        this.r = randomRange(60, 110);
         this.speedX = randomRange(-4, 4);
         this.speedY = randomRange(-4, 4);
     }
