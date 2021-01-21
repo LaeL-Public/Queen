@@ -12,7 +12,7 @@
     height     : 100px;
     margin     : 300px auto;
     font-size  : 40px;
-    font-family: Baskerville;
+    z-index: 99;
     font-style: oblique;
     color: rgb(153, 94, 17);
 }
